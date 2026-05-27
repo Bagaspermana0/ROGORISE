@@ -43,12 +43,11 @@
 }
 
 .stats__bar-fill {
-  background: linear-gradient(to top, var(--accent-green), var(--accent-green-2));
+  background: var(--accent-primary);
   border-radius: var(--radius-sm) var(--radius-sm) 0 0;
   width: 100%;
   transform-origin: bottom;
-  animation: growUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) both;
-  box-shadow: 0 -4px 20px rgba(0, 255, 135, 0.3);
+  animation: growUp 1.2s cubic-bezier(0.25, 1, 0.5, 1) both;
 }
 
 @keyframes growUp {
@@ -57,10 +56,10 @@
 }
 
 .stats__bar-pct {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: var(--font-heading);
   font-size: 18px;
-  font-weight: 800;
-  color: var(--accent-green);
+  font-weight: 700;
+  color: var(--accent-primary);
 }
 
 .stats__bar-year {
@@ -71,16 +70,17 @@
 
 .stats__trend-arrow {
   position: absolute;
-  bottom: 0;
-  right: -10px;
-  font-size: 12px;
+  bottom: -15px;
+  right: -20px;
+  font-size: 11px;
   font-weight: 700;
-  color: var(--accent-green);
+  color: var(--accent-secondary);
   white-space: nowrap;
-  background: var(--accent-green-dark);
-  border: 1px solid var(--accent-green-border);
+  background: var(--accent-bg);
+  border: 1px solid var(--border);
   padding: 4px 10px;
   border-radius: 100px;
+  font-family: var(--font-accent);
 }
 
 .stats__metrics {
@@ -95,13 +95,13 @@
 }
 
 .stats__metric-val {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 36px;
-  font-weight: 900;
-  color: var(--accent-green);
-  letter-spacing: -0.03em;
+  font-family: var(--font-heading);
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--accent-secondary);
+  letter-spacing: -0.02em;
   margin-bottom: 8px;
-  text-shadow: 0 0 20px rgba(0, 255, 135, 0.3);
+  font-style: italic;
 }
 
 .stats__metric-label {

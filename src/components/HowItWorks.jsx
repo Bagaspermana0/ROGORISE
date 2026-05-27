@@ -71,8 +71,8 @@ export default function HowItWorks() {
         {/* Result banner */}
         <div className="how__result">
           <div className="how__result-left">
-            <span className="how__result-emoji" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(0, 255, 135, 0.1)', color: 'var(--accent-green)', padding: 10, borderRadius: 10 }}>
-              <TbRocket style={{ fontSize: 20 }} />
+            <span className="how__result-emoji" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', background: 'var(--bg-card)', color: 'var(--accent-secondary)', padding: 12, borderRadius: 12, border: '1px solid var(--border)' }}>
+              <TbRocket style={{ fontSize: 24 }} />
             </span>
             <div>
               <h3>Siap dalam 5 Menit</h3>

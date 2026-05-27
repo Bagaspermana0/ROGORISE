@@ -51,7 +51,7 @@ const roadmap = [
 ]
 
 const statusConfig = {
-  done: { label: 'Selesai', color: 'var(--accent-green)' },
+  done: { label: 'Selesai', color: 'var(--accent-primary)' },
   current: { label: 'Dalam Proses', color: '#FFB347' },
   upcoming: { label: 'Akan Datang', color: 'var(--text-muted)' },
 }

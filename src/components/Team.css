@@ -40,7 +40,7 @@
 }
 
 .team__avatar-initial {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: var(--font-heading);
   font-size: 36px;
   font-weight: 900;
   color: var(--text-primary);
@@ -106,7 +106,7 @@
   color: var(--text-secondary);
   line-height: 1.6;
   font-style: italic;
-  border-left: 2px solid var(--accent-green-border);
+  border-left: 2px solid var(--border);
   padding: 8px 12px;
   text-align: left;
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
@@ -135,9 +135,9 @@
 }
 
 .team__social:hover {
-  border-color: var(--accent-green-border);
-  color: var(--accent-green);
-  background: var(--accent-green-dark);
+  border-color: var(--border);
+  color: var(--accent-primary);
+  background: var(--accent-bg);
 }
 
 /* Mentor Card */
@@ -196,7 +196,7 @@
 .team__mentor-dot {
   width: 6px;
   height: 6px;
-  background: var(--accent-green);
+  background: var(--accent-primary);
   border-radius: 50%;
   flex-shrink: 0;
 }
@@ -227,12 +227,12 @@
 }
 
 .team__univ-logo {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: var(--font-heading);
   font-size: 20px;
   font-weight: 900;
-  color: var(--accent-green);
-  background: var(--accent-green-dark);
-  border: 1px solid var(--accent-green-border);
+  color: var(--accent-primary);
+  background: var(--accent-bg);
+  border: 1px solid var(--border);
   padding: 8px 16px;
   border-radius: var(--radius-sm);
 }

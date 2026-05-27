@@ -57,10 +57,10 @@
 }
 
 .market__circle-val {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: var(--font-heading);
   font-size: 14px;
   font-weight: 900;
-  color: var(--accent-green);
+  color: var(--accent-primary);
 }
 
 .market__circle-legends {
@@ -79,7 +79,7 @@
 }
 
 .market__legend strong {
-  color: var(--accent-green);
+  color: var(--accent-primary);
 }
 
 .market__legend-dot {
@@ -118,7 +118,7 @@
   align-items: center;
   gap: 6px;
   font-size: 12px;
-  color: var(--accent-green);
+  color: var(--accent-primary);
   font-weight: 600;
 }
 
@@ -152,11 +152,11 @@
 
 .market__bar-fill {
   width: 100%;
-  background: linear-gradient(to top, var(--accent-green-2), var(--accent-green));
+  background: linear-gradient(to top, var(--accent-secondary), var(--accent-primary));
   border-radius: 4px;
   transform-origin: bottom;
   animation: growUp 1s ease both;
-  box-shadow: 0 0 8px rgba(0, 255, 135, 0.2);
+  
   transition: height 0.3s ease;
 }
 
@@ -180,10 +180,10 @@
 }
 
 .market__summary-val {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: var(--font-heading);
   font-size: 20px;
   font-weight: 900;
-  color: var(--accent-green);
+  color: var(--accent-primary);
   margin-bottom: 4px;
 }
 
@@ -195,8 +195,8 @@
 
 /* CAGR Banner */
 .market__cagr {
-  background: linear-gradient(135deg, var(--accent-green-dark), rgba(0, 255, 135, 0.02));
-  border: 1px solid var(--accent-green-border);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
   border-radius: var(--radius-xl);
   padding: 32px 40px;
   display: flex;
@@ -205,12 +205,12 @@
 }
 
 .market__cagr-num {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: var(--font-heading);
   font-size: 64px;
   font-weight: 900;
-  color: var(--accent-green);
+  color: var(--accent-primary);
   letter-spacing: -0.04em;
-  text-shadow: 0 0 40px rgba(0, 255, 135, 0.3);
+  
   flex-shrink: 0;
 }
 

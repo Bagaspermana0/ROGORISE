@@ -13,11 +13,6 @@ const badges = [
 export default function Hero() {
   return (
     <section className="hero" id="hero">
-      <div className="grid-bg" />
-      {/* Glow orbs */}
-      <div className="hero__orb hero__orb--1" />
-      <div className="hero__orb hero__orb--2" />
-
       <div className="container hero__inner">
         {/* Left content */}
         <div className="hero__content">
@@ -28,7 +23,7 @@ export default function Hero() {
 
           <h1 className="hero__title">
             Rise Above<br />
-            <span className="hero__title-accent text-glow">Your Limits.</span>
+            <span className="hero__title-accent">Your Limits.</span>
           </h1>
 
           <p className="hero__subtitle">

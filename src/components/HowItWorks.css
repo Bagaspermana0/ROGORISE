@@ -31,7 +31,7 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(90deg, var(--accent-green), transparent);
+  background: var(--accent-primary);
   opacity: 0;
   transition: var(--transition);
 }
@@ -41,9 +41,9 @@
 }
 
 .how__step-num {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: var(--font-heading);
   font-size: 56px;
-  font-weight: 900;
+  font-weight: 700;
   color: var(--border-bright);
   line-height: 1;
   margin-bottom: 16px;
@@ -52,19 +52,19 @@
 }
 
 .how__step:hover .how__step-num {
-  color: var(--accent-green-border);
+  color: var(--accent-primary);
 }
 
 .how__step-icon {
   width: 48px;
   height: 48px;
-  background: var(--accent-green-dark);
-  border: 1px solid var(--accent-green-border);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--accent-green);
+  color: var(--accent-secondary);
   font-size: 22px;
   margin-bottom: 20px;
 }
@@ -92,7 +92,7 @@
 
 .how__connector {
   padding: 0 8px;
-  color: var(--accent-green-border);
+  color: var(--border-bright);
   font-size: 22px;
   display: flex;
   align-items: center;
@@ -103,8 +103,8 @@
 
 /* Result Banner */
 .how__result {
-  background: linear-gradient(135deg, var(--accent-green-dark), rgba(0, 255, 135, 0.03));
-  border: 1px solid var(--accent-green-border);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
   border-radius: var(--radius-xl);
   padding: 32px 40px;
   display: flex;

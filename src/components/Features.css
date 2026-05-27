@@ -40,9 +40,10 @@
 }
 
 .features__tab--active {
-  background: var(--accent-green-dark) !important;
-  border-color: var(--accent-green-border) !important;
-  color: var(--accent-green) !important;
+  background: var(--bg-card) !important;
+  border-color: var(--accent-primary) !important;
+  color: var(--text-primary) !important;
+  box-shadow: var(--shadow-sm);
 }
 
 .features__tab-icon {
@@ -63,23 +64,23 @@
 .features__content-icon {
   width: 52px;
   height: 52px;
-  background: var(--accent-green-dark);
-  border: 1px solid var(--accent-green-border);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--accent-green);
+  color: var(--accent-secondary);
   font-size: 26px;
   margin-bottom: 20px;
 }
 
 .features__content-title {
-  font-size: 22px;
-  font-weight: 800;
+  font-size: 26px;
+  font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 14px;
-  letter-spacing: -0.02em;
+  font-family: var(--font-heading);
 }
 
 .features__content-desc {
@@ -108,10 +109,9 @@
 .features__highlight-dot {
   width: 8px;
   height: 8px;
-  background: var(--accent-green);
+  background: var(--accent-secondary);
   border-radius: 50%;
   flex-shrink: 0;
-  box-shadow: 0 0 8px rgba(0, 255, 135, 0.5);
 }
 
 /* Preview Cards */
@@ -136,9 +136,11 @@
   gap: 8px;
   font-size: 13px;
   font-weight: 700;
-  color: var(--accent-green);
+  color: var(--text-primary);
   padding-bottom: 10px;
   border-bottom: 1px solid var(--border);
+  font-family: var(--font-accent);
+  text-transform: uppercase;
 }
 
 .preview-nutrient__top {
@@ -151,7 +153,7 @@
 }
 
 .preview-nutrient__val {
-  color: var(--accent-green);
+  color: var(--text-primary);
   font-weight: 700;
 }
 
@@ -164,7 +166,7 @@
 
 .preview-bar__fill {
   height: 100%;
-  background: linear-gradient(90deg, var(--accent-green-2), var(--accent-green));
+  background: var(--accent-primary);
   border-radius: 3px;
   animation: growRight 1s ease both;
 }
@@ -199,8 +201,8 @@
 
 .preview-timeline__val {
   font-size: 16px;
-  font-weight: 800;
-  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-family: var(--font-heading);
 }
 
 .preview-goal-label {
@@ -215,21 +217,20 @@
 
 /* Scanner */
 .preview-scan-frame {
-  background: var(--bg-card);
-  border: 2px dashed var(--accent-green-border);
+  background: var(--bg-primary);
+  border: 1px dashed var(--border-bright);
   border-radius: var(--radius-md);
   height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  color: var(--accent-green);
+  color: var(--text-secondary);
   font-size: 13px;
 }
 
 .preview-scan-icon {
   font-size: 24px;
-  animation: pulse-green 1.5s ease infinite;
 }
 
 .preview-food {
@@ -256,7 +257,7 @@
 .preview-food__cal {
   font-size: 12px;
   font-weight: 700;
-  color: var(--accent-green);
+  color: var(--accent-secondary);
 }
 
 /* Streak */
@@ -271,10 +272,10 @@
 }
 
 .preview-streak__num {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 40px;
-  font-weight: 900;
-  color: var(--accent-green);
+  font-family: var(--font-heading);
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--accent-secondary);
   line-height: 1;
 }
 
@@ -307,8 +308,7 @@
 }
 
 .preview-week-day--done .preview-week-dot {
-  background: var(--accent-green);
-  box-shadow: 0 0 10px rgba(0, 255, 135, 0.4);
+  background: var(--accent-primary);
 }
 
 .preview-week-day span {

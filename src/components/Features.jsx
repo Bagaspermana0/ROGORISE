@@ -81,15 +81,17 @@ export default function Features() {
   return (
     <section className="features section" id="features">
       <div className="container">
-        <div className="features__header">
-          <div className="section-tag">
-            <RiFlashlightFill />
-            Fitur Unggulan
+        <div className="features__header" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '40px', alignItems: 'end', maxWidth: '100%', marginBottom: '80px' }}>
+          <div>
+            <div className="section-tag" style={{ marginBottom: 16 }}>
+              <RiFlashlightFill />
+              Fitur Unggulan
+            </div>
+            <h2 className="section-title" style={{ margin: 0, fontSize: 'clamp(40px, 5vw, 56px)', fontStyle: 'normal' }}>
+              Semua yang Kamu Butuhkan <br /><span style={{ fontStyle: 'italic', color: 'var(--accent-secondary)' }}>dalam Satu App</span>
+            </h2>
           </div>
-          <h2 className="section-title">
-            Semua yang Kamu Butuhkan <span>dalam Satu App</span>
-          </h2>
-          <p className="section-subtitle">
+          <p className="section-subtitle" style={{ margin: 0 }}>
             Lima pilar utama yang membuat RogoRise berbeda dari aplikasi fitness lainnya — dirancang khusus untuk gaya hidup orang Indonesia.
           </p>
         </div>
