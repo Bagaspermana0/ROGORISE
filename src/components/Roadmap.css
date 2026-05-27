@@ -1,0 +1,231 @@
+.roadmap__header {
+  max-width: 620px;
+  margin-bottom: 60px;
+}
+
+.roadmap__timeline {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.roadmap__item {
+  position: relative;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.roadmap__dot {
+  width: 40px;
+  height: 40px;
+  border: 2px solid;
+  border-radius: 50%;
+  background: var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  z-index: 2;
+  margin-bottom: 20px;
+  flex-shrink: 0;
+}
+
+.roadmap__line {
+  position: absolute;
+  top: 19px;
+  left: 50%;
+  right: -50%;
+  height: 2px;
+  background: var(--border);
+  z-index: 1;
+}
+
+.roadmap__line-fill {
+  height: 100%;
+  background: var(--accent-green);
+  transition: width 1s ease;
+  box-shadow: 0 0 8px rgba(0, 255, 135, 0.4);
+}
+
+.roadmap__card {
+  padding: 24px 20px;
+  width: 100%;
+}
+
+.roadmap__card--current {
+  border-color: #FFB34760 !important;
+  background: rgba(255, 179, 71, 0.03) !important;
+}
+
+.roadmap__card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 14px;
+  gap: 8px;
+}
+
+.roadmap__quarter {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+  margin-bottom: 4px;
+}
+
+.roadmap__status {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.roadmap__phase {
+  flex-shrink: 0;
+}
+
+.roadmap__title {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+
+.roadmap__goal {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+.roadmap__items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.roadmap__items li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.roadmap__check {
+  color: var(--accent-green);
+  font-weight: 900;
+  flex-shrink: 0;
+  font-size: 11px;
+  margin-top: 2px;
+}
+
+.roadmap__footer {
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+}
+
+.roadmap__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.roadmap__meta span {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+/* Total */
+.roadmap__total {
+  background: var(--bg-card);
+  border: 1px solid var(--accent-green-border);
+  border-radius: var(--radius-lg);
+  padding: 32px 40px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.roadmap__total-label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.roadmap__total-val {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--accent-green);
+  letter-spacing: -0.04em;
+  text-shadow: 0 0 30px rgba(0, 255, 135, 0.25);
+}
+
+.roadmap__total-breakdown {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.roadmap__total-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.roadmap__total-q {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.roadmap__total-b {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+@media (max-width: 968px) {
+  .roadmap__timeline {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .roadmap__item {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 0 0 24px;
+  }
+  .roadmap__dot {
+    flex-shrink: 0;
+    margin-bottom: 0;
+    margin-top: 4px;
+  }
+  .roadmap__line {
+    top: 20px;
+    left: 19px;
+    right: auto;
+    width: 2px;
+    height: calc(100% - 20px);
+    bottom: 0;
+  }
+  .roadmap__line-fill {
+    width: 100% !important;
+    height: 50%;
+  }
+  .roadmap__card { flex: 1; }
+  .roadmap__total { flex-direction: column; gap: 24px; padding: 24px; }
+  .roadmap__total-val { font-size: 36px; }
+}

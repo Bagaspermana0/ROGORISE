@@ -1,0 +1,238 @@
+.market__header {
+  max-width: 620px;
+  margin-bottom: 60px;
+}
+
+.market__layout {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 40px;
+  align-items: start;
+  margin-bottom: 40px;
+}
+
+/* Circles */
+.market__circles-label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+.market__circle-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 280px;
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto 32px;
+}
+
+.market__circle {
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.market__circle-inner {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.market__circle-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.market__circle-val {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  color: var(--accent-green);
+}
+
+.market__circle-legends {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.market__legend {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.market__legend strong {
+  color: var(--accent-green);
+}
+
+.market__legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+/* Chart */
+.market__chart {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+}
+
+.market__chart-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.market__chart-header h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.market__chart-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--accent-green);
+  font-weight: 600;
+}
+
+.market__bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  height: 120px;
+  margin-bottom: 24px;
+}
+
+.market__bar-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  height: 100%;
+}
+
+.market__bar-wrap {
+  flex: 1;
+  width: 100%;
+  background: var(--border);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.market__bar-fill {
+  width: 100%;
+  background: linear-gradient(to top, var(--accent-green-2), var(--accent-green));
+  border-radius: 4px;
+  transform-origin: bottom;
+  animation: growUp 1s ease both;
+  box-shadow: 0 0 8px rgba(0, 255, 135, 0.2);
+  transition: height 0.3s ease;
+}
+
+.market__bar-month {
+  font-size: 9px;
+  color: var(--text-muted);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.market__summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  border-top: 1px solid var(--border);
+  padding-top: 20px;
+}
+
+.market__summary-item {
+  text-align: center;
+}
+
+.market__summary-val {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--accent-green);
+  margin-bottom: 4px;
+}
+
+.market__summary-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* CAGR Banner */
+.market__cagr {
+  background: linear-gradient(135deg, var(--accent-green-dark), rgba(0, 255, 135, 0.02));
+  border: 1px solid var(--accent-green-border);
+  border-radius: var(--radius-xl);
+  padding: 32px 40px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.market__cagr-num {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 64px;
+  font-weight: 900;
+  color: var(--accent-green);
+  letter-spacing: -0.04em;
+  text-shadow: 0 0 40px rgba(0, 255, 135, 0.3);
+  flex-shrink: 0;
+}
+
+.market__cagr-title {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.market__cagr-sub {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+@media (max-width: 968px) {
+  .market__layout { grid-template-columns: 1fr; }
+  .market__cagr {
+    flex-direction: column;
+    text-align: center;
+    padding: 28px 24px;
+  }
+  .market__cagr-num { font-size: 48px; }
+}
