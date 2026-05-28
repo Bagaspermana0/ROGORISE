@@ -28,8 +28,8 @@ export default function RegisterScreen({ navigate, setUser }) {
       </div>
 
       <div style={{ padding: '10px 20px' }}>
-        <h2 style={{ fontSize: 24, fontWeight: 800, marginBottom: 6, fontFamily: 'Space Grotesk, sans-serif', display: 'flex', alignItems: 'center', gap: 8 }}>
-          Buat Akun <TbRocket style={{ color: 'var(--accent-green)' }} />
+        <h2 style={{ fontSize: 24, fontWeight: 800, marginBottom: 6, fontFamily: 'Space Grotesk, sans-serif' }}>
+          Buat Akun
         </h2>
         <p style={{ fontSize: 13, color: '#666', marginBottom: 28 }}>
           Bergabung dan mulai perjalanan hidup sehatmu hari ini

@@ -87,7 +87,7 @@ export default function Competitors() {
           <div className="comp__adv-grid">
             {[
               { icon: <TbFlag style={{ color: '#FF4D4D' }} />, title: 'Lokal Mindset', desc: 'Dibangun khusus untuk pengguna Indonesia — bahasa, budaya, dan kebiasaan makan lokal' },
-              { icon: <TbToolsKitchen2 style={{ color: 'var(--accent-primary)' }} />, title: 'Database Makanan Lokal', desc: 'Nasi, tempe, rendang, gado-gado — semua ada. Aplikasi global tidak mengerti ini.' },
+              { icon: <TbToolsKitchen2 style={{ color: 'var(--accent-green)' }} />, title: 'Database Makanan Lokal', desc: 'Nasi, tempe, rendang, gado-gado — semua ada. Aplikasi global tidak mengerti ini.' },
               { icon: <TbRobot style={{ color: '#4ECDC4' }} />, title: 'AI Data Moat', desc: 'Semakin banyak pengguna, AI semakin cerdas dan personal — kompetitor sulit mengejar' },
               { icon: <TbCash style={{ color: '#FFD700' }} />, title: 'Harga Paling Kompetitif', desc: 'Mulai Rp15.000/bulan — lebih murah dari secangkir kopi di kafe' },
               { icon: <TbBarbell style={{ color: '#FF6B6B' }} />, title: 'Komunitas Organik', desc: 'Jaringan gym lokal, komunitas olahraga, dan trainer yang dibangun dari akar' },

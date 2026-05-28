@@ -52,7 +52,7 @@ export default function MarketSize() {
       <div className="container">
         <div className="market__header">
           <div className="section-tag">
-            <TbChartPie />
+
             Ukuran Pasar
           </div>
           <h2 className="section-title">

@@ -31,14 +31,13 @@ export default function WorkoutDetailScreen({ goBack, navigate }) {
         {/* Stats row */}
         <div style={{ display: 'flex', gap: 10 }}>
           {[
-            { icon: <TbClock style={{ color: '#4ECDC4' }} />, val: '50 mnt', label: 'Durasi' },
-            { icon: <TbFlame style={{ color: '#FF6B6B' }} />, val: '360 kkal', label: 'Kalori' },
-            { icon: <TbBarbell style={{ color: 'var(--accent-green)' }} />, val: `${completedCount}/${exercises.length}`, label: 'Selesai' },
+            { val: '50 mnt', label: 'Durasi' },
+            { val: '360 kkal', label: 'Kalori' },
+            { val: `${completedCount}/${exercises.length}`, label: 'Selesai' },
           ].map((s, i) => (
-            <div key={i} style={{ flex: 1, background: '#161616', borderRadius: 12, padding: '10px', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-              <div style={{ fontSize: 18, marginBottom: 2 }}>{s.icon}</div>
+            <div key={i} style={{ flex: 1, background: '#161616', borderRadius: 12, padding: '12px 10px', textAlign: 'center' }}>
               <div style={{ fontSize: 14, fontWeight: 800, color: 'white', fontFamily: 'Space Grotesk, sans-serif' }}>{s.val}</div>
-              <div style={{ fontSize: 10, color: '#555' }}>{s.label}</div>
+              <div style={{ fontSize: 10, color: '#555', marginTop: 2 }}>{s.label}</div>
             </div>
           ))}
         </div>
@@ -78,8 +77,8 @@ export default function WorkoutDetailScreen({ goBack, navigate }) {
                   <div style={{ position: 'absolute', bottom: 8, left: 10, fontSize: 10, color: '#aaa', fontWeight: 600, zIndex: 2, background: 'rgba(0,0,0,0.6)', padding: '4px 8px', borderRadius: 4 }}>► Tonton Panduan</div>
                 </div>
                 <div style={{ fontSize: 12, color: '#ccc', lineHeight: 1.5, marginBottom: 8 }}>{ex.desc}</div>
-                <div style={{ fontSize: 11, color: '#555', display: 'flex', alignItems: 'center', gap: 4 }}>
-                  <TbTarget style={{ fontSize: 13, color: 'var(--accent-green)' }} /> Target: <span style={{ color: 'white', fontWeight: 600 }}>{ex.muscle}</span>
+                <div style={{ fontSize: 11, color: '#555' }}>
+                  Target: <span style={{ color: 'white', fontWeight: 600 }}>{ex.muscle}</span>
                 </div>
               </div>
             )}

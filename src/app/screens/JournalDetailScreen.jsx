@@ -1,4 +1,4 @@
-import { RiArrowLeftLine, RiBookmarkLine, RiShareForwardLine } from 'react-icons/ri'
+import { RiArrowLeftLine, RiBookmarkLine, RiShareForwardLine, RiStarFill } from 'react-icons/ri'
 import { TbClock } from 'react-icons/tb'
 
 export default function JournalDetailScreen({ goBack, screenData }) {
@@ -66,7 +66,7 @@ export default function JournalDetailScreen({ goBack, screenData }) {
 
           {journal.premium && (
             <div style={{ background: 'linear-gradient(135deg, rgba(255, 179, 71, 0.1), rgba(255, 179, 71, 0.05))', border: '1px solid rgba(255, 179, 71, 0.3)', borderRadius: 12, padding: 16, marginTop: 20, marginBottom: 20 }}>
-              <div style={{ fontSize: 13, fontWeight: 800, color: '#FFB347', marginBottom: 8 }}>⭐ Konten Premium Eksklusif</div>
+              <div style={{ fontSize: 13, fontWeight: 800, color: '#FFB347', marginBottom: 8, display: 'flex', alignItems: 'center', gap: 6 }}><RiStarFill /> Konten Premium Eksklusif</div>
               <p style={{ fontSize: 13, color: 'white', lineHeight: 1.5 }}>
                 Dalam artikel eksklusif ini, kami juga membagikan rahasia menghitung rasio makro secara presisi yang digunakan oleh atlet profesional.
               </p>

@@ -54,14 +54,13 @@ export default function ProgressScreen({ navigate }) {
         {/* Key stats */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 10, marginBottom: 14 }}>
           {[
-            { label: 'Berat Skrg', val: `${current} kg`, color: 'white', icon: <TbScale style={{ color: '#fff' }} /> },
-            { label: 'Perubahan', val: `${change} kg`, color: isLoss ? 'var(--accent-green)' : '#FF6B6B', icon: isLoss ? <TbTrendingDown style={{ color: 'var(--accent-green)' }} /> : <TbTrendingUp style={{ color: '#FF6B6B' }} /> },
-            { label: 'Target', val: '74 kg', color: '#4ECDC4', icon: <TbTarget style={{ color: '#4ECDC4' }} /> },
+            { label: 'Berat Skrg', val: `${current} kg`, color: 'white' },
+            { label: 'Perubahan', val: `${change} kg`, color: isLoss ? 'var(--accent-green)' : '#FF6B6B' },
+            { label: 'Target', val: '74 kg', color: '#4ECDC4' },
           ].map((s, i) => (
-            <div key={i} style={{ background: '#161616', border: '1px solid #222', borderRadius: 14, padding: '12px 10px', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-              <div style={{ fontSize: 20, marginBottom: 4 }}>{s.icon}</div>
+            <div key={i} style={{ background: '#161616', border: '1px solid #222', borderRadius: 14, padding: '16px 10px', textAlign: 'center' }}>
               <div style={{ fontSize: 16, fontWeight: 900, color: s.color, fontFamily: 'Space Grotesk, sans-serif' }}>{s.val}</div>
-              <div style={{ fontSize: 10, color: '#555', marginTop: 2 }}>{s.label}</div>
+              <div style={{ fontSize: 10, color: '#555', marginTop: 4 }}>{s.label}</div>
             </div>
           ))}
         </div>

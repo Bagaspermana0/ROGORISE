@@ -74,19 +74,16 @@ export default function ProfileScreen({ navigate, user, setUser }) {
           <div style={{ fontSize: 13, fontWeight: 700, marginBottom: 12 }}>Data Tubuh</div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 10 }}>
             {[
-              { label: 'Berat Badan', val: '82 kg', icon: <TbScale style={{ color: '#FF6B6B' }} /> },
-              { label: 'Tinggi Badan', val: '175 cm', icon: <TbRuler style={{ color: '#4ECDC4' }} /> },
-              { label: 'BMI', val: '26.8', icon: <TbActivity style={{ color: '#FFB347' }} /> },
-              { label: 'Target', val: '74 kg', icon: <TbTarget style={{ color: 'var(--accent-green)' }} /> },
-              { label: 'Kalori Target', val: '2,100 kkal', icon: <TbFlame style={{ color: '#FFB347' }} /> },
-              { label: 'Level Aktivitas', val: 'Moderat', icon: <TbRun style={{ color: '#45B7D1' }} /> },
+              { label: 'Berat Badan', val: '82 kg' },
+              { label: 'Tinggi Badan', val: '175 cm' },
+              { label: 'BMI', val: '26.8' },
+              { label: 'Target', val: '74 kg' },
+              { label: 'Kalori Target', val: '2,100 kkal' },
+              { label: 'Level Aktivitas', val: 'Moderat' },
             ].map((item, i) => (
-              <div key={i} style={{ background: '#0f0f0f', borderRadius: 12, padding: '10px 12px', display: 'flex', alignItems: 'center', gap: 8 }}>
-                <span style={{ fontSize: 18, display: 'flex' }}>{item.icon}</span>
-                <div>
-                  <div style={{ fontSize: 10, color: '#555' }}>{item.label}</div>
-                  <div style={{ fontSize: 14, fontWeight: 700, color: 'white' }}>{item.val}</div>
-                </div>
+              <div key={i} style={{ background: '#0f0f0f', borderRadius: 12, padding: '10px 12px' }}>
+                <div style={{ fontSize: 10, color: '#555', marginBottom: 3 }}>{item.label}</div>
+                <div style={{ fontSize: 14, fontWeight: 700, color: 'white' }}>{item.val}</div>
               </div>
             ))}
           </div>
@@ -116,7 +113,7 @@ export default function ProfileScreen({ navigate, user, setUser }) {
                 cursor: 'pointer', transition: 'background 0.15s'
               }}
             >
-              <div style={{ width: 36, height: 36, borderRadius: 10, background: `${item.color}15`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 18, color: item.color }}>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 24, color: item.color }}>
                 {item.icon}
               </div>
               <span style={{ flex: 1, fontSize: 14, fontWeight: 600, color: item.action === 'logout' ? '#FF4444' : 'white' }}>{item.label}</span>
@@ -134,8 +131,7 @@ export default function ProfileScreen({ navigate, user, setUser }) {
         </div>
 
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 6, marginBottom: 8, color: '#333', fontSize: 11 }}>
-          <RiFlashlightFill style={{ color: 'var(--accent-green)', opacity: 0.5 }} />
-          RogoRise v1.0.0 · Made with <TbFlag style={{ color: 'var(--accent-green)', display: 'inline' }} /> in Semarang 🇮🇩
+          RogoRise v1.0.0 · Made in Semarang, Indonesia
         </div>
       </div>
     </div>

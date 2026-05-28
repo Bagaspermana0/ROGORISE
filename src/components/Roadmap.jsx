@@ -51,7 +51,7 @@ const roadmap = [
 ]
 
 const statusConfig = {
-  done: { label: 'Selesai', color: 'var(--accent-primary)' },
+  done: { label: 'Selesai', color: 'var(--accent-green)' },
   current: { label: 'Dalam Proses', color: '#FFB347' },
   upcoming: { label: 'Akan Datang', color: 'var(--text-muted)' },
 }
@@ -62,7 +62,6 @@ export default function Roadmap() {
       <div className="container">
         <div className="roadmap__header">
           <div className="section-tag">
-            <RiMapLine />
             Roadmap
           </div>
           <h2 className="section-title">
@@ -95,12 +94,7 @@ export default function Roadmap() {
                   className="roadmap__dot"
                   style={{ borderColor: sc.color, color: sc.color }}
                 >
-                  {item.status === 'done'
-                    ? <RiCheckDoubleLine />
-                    : item.status === 'current'
-                    ? <BsCircleFill style={{ fontSize: 8 }} />
-                    : <BsCircle style={{ fontSize: 8 }} />
-                  }
+                  
                 </div>
 
                 {/* Card */}

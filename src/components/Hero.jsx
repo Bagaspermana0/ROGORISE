@@ -13,17 +13,21 @@ const badges = [
 export default function Hero() {
   return (
     <section className="hero" id="hero">
+      <div className="grid-bg" />
+      {/* Glow orbs */}
+      <div className="hero__orb hero__orb--1" />
+      <div className="hero__orb hero__orb--2" />
+
       <div className="container hero__inner">
         {/* Left content */}
         <div className="hero__content">
           <div className="section-tag">
-            <BsStars />
             AI Fitness Coach #1 Indonesia
           </div>
 
           <h1 className="hero__title">
             Rise Above<br />
-            <span className="hero__title-accent">Your Limits.</span>
+            <span className="hero__title-accent text-glow">Your Limits.</span>
           </h1>
 
           <p className="hero__subtitle">
@@ -56,11 +60,11 @@ export default function Hero() {
           {/* Social proof */}
           <div className="hero__proof">
             <div className="hero__proof-avatars">
-              {[1,2,3,4].map(i => (
+              {[1,2,3].map(i => (
                 <div key={i} className="hero__proof-avatar" style={{
                   background: `hsl(${i * 40 + 120}, 60%, 30%)`
                 }}>
-                  {['B','A','G','A'][i-1]}
+                  {['B','A','G'][i-1]}
                 </div>
               ))}
             </div>

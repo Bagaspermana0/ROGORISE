@@ -202,20 +202,20 @@ export default function WorkoutScreen({ navigate }) {
                 <div style={{ display: 'flex', gap: 14, borderTop: '1px solid #222', borderColor: activePlan.isToday ? 'rgba(0, 255, 135, 0.15)' : '#222', paddingTop: 14, marginBottom: 16 }}>
                   <div style={{ flex: 1 }}>
                     <div style={{ fontSize: 10, color: '#555', textTransform: 'uppercase', marginBottom: 2 }}>Durasi</div>
-                    <div style={{ fontSize: 14, fontWeight: 800, color: 'white', display: 'flex', alignItems: 'center', gap: 4 }}>
-                      <TbClock style={{ color: activePlan.color }} /> {activePlan.duration}
+                    <div style={{ fontSize: 14, fontWeight: 800, color: 'white' }}>
+                      {activePlan.duration}
                     </div>
                   </div>
                   <div style={{ flex: 1 }}>
                     <div style={{ fontSize: 10, color: '#555', textTransform: 'uppercase', marginBottom: 2 }}>Kalori</div>
-                    <div style={{ fontSize: 14, fontWeight: 800, color: 'white', display: 'flex', alignItems: 'center', gap: 4 }}>
-                      <TbFlame style={{ color: '#FFB347' }} /> {activePlan.calories} kkal
+                    <div style={{ fontSize: 14, fontWeight: 800, color: 'white' }}>
+                      {activePlan.calories} kkal
                     </div>
                   </div>
                   <div style={{ flex: 1 }}>
                     <div style={{ fontSize: 10, color: '#555', textTransform: 'uppercase', marginBottom: 2 }}>Latihan</div>
-                    <div style={{ fontSize: 14, fontWeight: 800, color: 'white', display: 'flex', alignItems: 'center', gap: 4 }}>
-                      <TbBarbell style={{ color: '#45B7D1' }} /> {activePlan.exercises} Set
+                    <div style={{ fontSize: 14, fontWeight: 800, color: 'white' }}>
+                      {activePlan.exercises} Set
                     </div>
                   </div>
                 </div>
@@ -242,25 +242,15 @@ export default function WorkoutScreen({ navigate }) {
             
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
               {/* Durasi Stat */}
-              <div style={{ background: '#0c0c0c', border: '1px solid #1a1a1a', borderRadius: 12, padding: '10px 12px', display: 'flex', alignItems: 'center', gap: 8 }}>
-                <div style={{ color: 'var(--accent-green)', fontSize: 20, display: 'flex' }}>
-                  <TbClock />
-                </div>
-                <div>
-                  <div style={{ fontSize: 16, fontWeight: 900, color: 'white', fontFamily: 'Space Grotesk, sans-serif' }}>{totalMinutes} mnt</div>
-                  <div style={{ fontSize: 9, color: '#555', textTransform: 'uppercase' }}>Total Durasi</div>
-                </div>
+              <div style={{ background: '#0c0c0c', border: '1px solid #1a1a1a', borderRadius: 12, padding: '10px 12px' }}>
+                <div style={{ fontSize: 16, fontWeight: 900, color: 'white', fontFamily: 'Space Grotesk, sans-serif' }}>{totalMinutes} mnt</div>
+                <div style={{ fontSize: 9, color: '#555', textTransform: 'uppercase' }}>Total Durasi</div>
               </div>
 
               {/* Kalori Stat */}
-              <div style={{ background: '#0c0c0c', border: '1px solid #1a1a1a', borderRadius: 12, padding: '10px 12px', display: 'flex', alignItems: 'center', gap: 8 }}>
-                <div style={{ color: '#FFB347', fontSize: 20, display: 'flex' }}>
-                  <TbFlame />
-                </div>
-                <div>
-                  <div style={{ fontSize: 16, fontWeight: 900, color: 'white', fontFamily: 'Space Grotesk, sans-serif' }}>{totalCalories} kkal</div>
-                  <div style={{ fontSize: 9, color: '#555', textTransform: 'uppercase' }}>Kalori Terbakar</div>
-                </div>
+              <div style={{ background: '#0c0c0c', border: '1px solid #1a1a1a', borderRadius: 12, padding: '10px 12px' }}>
+                <div style={{ fontSize: 16, fontWeight: 900, color: 'white', fontFamily: 'Space Grotesk, sans-serif' }}>{totalCalories} kkal</div>
+                <div style={{ fontSize: 9, color: '#555', textTransform: 'uppercase' }}>Kalori Terbakar</div>
               </div>
             </div>
 

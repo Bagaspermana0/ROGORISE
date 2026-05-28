@@ -69,7 +69,7 @@ export default function Pricing() {
       <div className="container">
         <div className="pricing__header">
           <div className="section-tag">
-            <BiCrown />
+
             Harga Terjangkau
           </div>
           <h2 className="section-title">

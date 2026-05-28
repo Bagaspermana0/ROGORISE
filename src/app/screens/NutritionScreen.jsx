@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { RiAddLine, RiScanLine, RiSearchLine, RiCloseLine, RiCheckLine, RiDropLine, RiDropFill, RiCupLine, RiLightbulbLine } from 'react-icons/ri'
+import { RiAddLine, RiScanLine, RiSearchLine, RiCloseLine, RiCheckLine, RiDropLine, RiDropFill, RiCupLine, RiLightbulbLine, RiStarFill } from 'react-icons/ri'
 import { TbToolsKitchen2, TbCookie, TbAlertTriangle } from 'react-icons/tb'
 
 const foodDatabase = [
@@ -534,7 +534,7 @@ export default function NutritionScreen({ navigate }) {
               <div key={i} onClick={() => navigate('journal-detail', j)} className="hover-bounce" style={{ background: '#161616', border: '1px solid #1e1e1e', borderRadius: 16, padding: '16px', cursor: 'pointer' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 8 }}>
                   <span style={{ fontSize: 10, fontWeight: 700, color: 'var(--accent-green)', background: 'rgba(0,255,135,0.1)', padding: '4px 8px', borderRadius: 6 }}>{j.type}</span>
-                  {j.premium && <span style={{ fontSize: 10, fontWeight: 700, color: '#FFB347', background: 'rgba(255,179,71,0.1)', border: '1px solid rgba(255,179,71,0.3)', padding: '2px 8px', borderRadius: 100 }}>⭐ Premium</span>}
+                  {j.premium && <span style={{ fontSize: 10, fontWeight: 700, color: '#FFB347', background: 'rgba(255,179,71,0.1)', border: '1px solid rgba(255,179,71,0.3)', padding: '2px 8px', borderRadius: 100, display: 'inline-flex', alignItems: 'center', gap: 4 }}><RiStarFill /> Premium</span>}
                 </div>
                 <div style={{ fontSize: 15, fontWeight: 800, fontFamily: 'Space Grotesk, sans-serif', marginBottom: 4 }}>{j.title}</div>
                 <div style={{ fontSize: 12, color: '#666' }}>{j.desc}</div>

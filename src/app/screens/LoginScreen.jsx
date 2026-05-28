@@ -33,8 +33,8 @@ export default function LoginScreen({ navigate, setUser }) {
 
       <div style={{ padding: '0 20px', flex: 1 }}>
         {/* Welcome */}
-        <h2 style={{ fontSize: 22, fontWeight: 800, marginBottom: 4, fontFamily: 'Space Grotesk, sans-serif', display: 'flex', alignItems: 'center', gap: 8 }}>
-          Selamat Datang <TbMoodSmile style={{ color: 'var(--accent-green)' }} />
+        <h2 style={{ fontSize: 22, fontWeight: 800, marginBottom: 4, fontFamily: 'Space Grotesk, sans-serif' }}>
+          Selamat Datang
         </h2>
         <p style={{ fontSize: 13, color: '#666', marginBottom: 24 }}>
           Masuk untuk melanjutkan perjalanan sehatmu

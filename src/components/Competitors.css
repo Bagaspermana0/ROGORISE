@@ -36,10 +36,9 @@
 }
 
 .comp__th--rogorise {
-  background: var(--bg-card);
-  border-left: 2px solid var(--accent-primary);
-  border-right: 2px solid var(--accent-primary);
-  border-top: 2px solid var(--accent-primary);
+  background: var(--accent-green-dark);
+  border-left: 1px solid var(--accent-green-border);
+  border-right: 1px solid var(--accent-green-border);
 }
 
 .comp__rogorise-head {
@@ -47,10 +46,10 @@
   flex-direction: column;
   align-items: center;
   gap: 6px;
-  color: var(--accent-primary);
-  font-size: 16px;
-  font-weight: 700;
-  font-family: var(--font-heading);
+  color: var(--accent-green);
+  font-size: 14px;
+  font-weight: 800;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .comp__rogorise-head svg {
@@ -97,18 +96,15 @@
 }
 
 .comp__td--rogorise {
-  background: var(--accent-bg);
-  border-left: 2px solid var(--accent-primary);
-  border-right: 2px solid var(--accent-primary);
-}
-
-.comp__row:last-child .comp__td--rogorise {
-  border-bottom: 2px solid var(--accent-primary);
+  background: rgba(0, 255, 135, 0.03);
+  border-left: 1px solid var(--accent-green-border);
+  border-right: 1px solid var(--accent-green-border);
 }
 
 .comp-check {
-  color: var(--accent-primary);
+  color: var(--accent-green);
   font-size: 20px;
+  filter: drop-shadow(0 0 6px rgba(0, 255, 135, 0.4));
 }
 
 .comp-cross {

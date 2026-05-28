@@ -31,8 +31,8 @@ export default function HomeScreen({ navigate, user }) {
         {/* Greeting */}
         <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: 20 }}>
           <div>
-            <p style={{ fontSize: 13, color: '#555', marginBottom: 2, display: 'flex', alignItems: 'center', gap: 4 }}>
-              {greeting} <TbMoodSmile style={{ color: 'var(--accent-green)', display: 'inline' }} />
+            <p style={{ fontSize: 13, color: '#555', marginBottom: 2 }}>
+              {greeting}
             </p>
             <h1 style={{ fontSize: 24, fontWeight: 900, fontFamily: 'Space Grotesk, sans-serif', letterSpacing: '-0.02em' }}>
               Halo, <span style={{ color: 'var(--accent-green)' }}>{name}!</span>
@@ -48,9 +48,7 @@ export default function HomeScreen({ navigate, user }) {
 
         {/* AI Smart Suggestion */}
         <div className="hover-bounce bounce-in stagger-item stagger-1" style={{ background: 'linear-gradient(135deg, rgba(255, 179, 71, 0.1), rgba(255, 179, 71, 0.02))', border: '1px solid rgba(255, 179, 71, 0.3)', borderRadius: 18, padding: 14, marginBottom: 14, display: 'flex', alignItems: 'center', gap: 12 }}>
-          <div style={{ width: 40, height: 40, borderRadius: 12, background: 'rgba(255, 179, 71, 0.15)', color: '#FFB347', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 22, flexShrink: 0 }}>
-            <BsStars className="pulse" />
-          </div>
+          <BsStars className="pulse" style={{ fontSize: 28, color: '#FFB347', flexShrink: 0 }} />
           <div>
             <div style={{ fontSize: 13, fontWeight: 700, color: '#FFB347', marginBottom: 2 }}>Saran AI Hari Ini</div>
             <div style={{ fontSize: 12, color: 'white', lineHeight: 1.4, display: 'flex', alignItems: 'center', gap: 4 }}>
@@ -91,7 +89,7 @@ export default function HomeScreen({ navigate, user }) {
             <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 10 }}>
               <div className="hover-bounce" onClick={() => navigate('workout')} style={{ background: '#161616', border: '1px solid #222', borderRadius: 14, padding: '12px 14px', flex: 1, cursor: 'pointer' }}>
                 <div style={{ fontSize: 11, color: '#555', marginBottom: 4, display: 'flex', alignItems: 'center', gap: 4 }}>
-                  <TbTarget style={{ color: '#FFB347', fontSize: 14 }} /> Target
+                  Target
                 </div>
                 <div style={{ fontSize: 18, fontWeight: 900, color: '#FFB347', fontFamily: 'Space Grotesk, sans-serif' }}>Turun BB</div>
               </div>
@@ -116,9 +114,7 @@ export default function HomeScreen({ navigate, user }) {
             onClick={() => navigate('workout-detail')}
             style={{ background: 'linear-gradient(135deg, #1a1010, #100a0a)', border: '1px solid #2a1515', borderRadius: 16, padding: '14px 16px', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 14 }}
           >
-            <div style={{ width: 48, height: 48, background: '#FF6B6B22', border: '1px solid #FF6B6B44', borderRadius: 14, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 24, color: '#FF6B6B' }}>
-              <TbBarbell style={{ fontSize: 26 }} />
-            </div>
+            <TbBarbell style={{ fontSize: 32, color: '#FF6B6B', flexShrink: 0 }} />
             <div style={{ flex: 1 }}>
               <div style={{ fontSize: 14, fontWeight: 700, marginBottom: 3 }}>{workoutToday.name}</div>
               <div style={{ fontSize: 12, color: '#555' }}>{workoutToday.exercises} latihan · {workoutToday.duration}</div>
@@ -179,11 +175,7 @@ export default function HomeScreen({ navigate, user }) {
                 }}
               >
                 <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-                  <div style={{
-                    width: 36, height: 36, borderRadius: 10, background: `${action.color}15`,
-                    display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    color: action.color, fontSize: 18, flexShrink: 0
-                  }}>
+                  <div style={{ color: action.color, fontSize: 24, flexShrink: 0, display: 'flex', alignItems: 'center' }}>
                     {action.icon}
                   </div>
                   <div>

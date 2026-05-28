@@ -99,7 +99,7 @@ export default function Team() {
           <div className="team__mentor card">
             <div className="team__mentor-header">
               <div className="team__mentor-icon" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <TbTarget style={{ color: 'var(--accent-primary)', fontSize: 24 }} />
+                <TbTarget style={{ color: 'var(--accent-green)', fontSize: 24 }} />
               </div>
               <div>
                 <h3 className="team__mentor-title">Kami Mencari Mentor</h3>

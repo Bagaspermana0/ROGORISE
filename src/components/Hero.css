@@ -7,7 +7,28 @@
   overflow: hidden;
 }
 
-/* Removed Orbs */
+.hero__orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  pointer-events: none;
+}
+
+.hero__orb--1 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(0, 255, 135, 0.12) 0%, transparent 70%);
+  top: -100px;
+  left: -200px;
+}
+
+.hero__orb--2 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(0, 255, 135, 0.08) 0%, transparent 70%);
+  bottom: 0;
+  right: -100px;
+}
 
 .hero__inner {
   display: grid;
@@ -34,8 +55,7 @@
 }
 
 .hero__title-accent {
-  color: var(--accent-primary);
-  font-style: italic;
+  color: var(--accent-green);
   display: block;
 }
 
@@ -71,12 +91,12 @@
 }
 
 .hero__badge:hover {
-  border-color: var(--text-primary);
-  color: var(--text-primary);
+  border-color: var(--accent-green-border);
+  color: var(--accent-green);
 }
 
 .hero__badge-icon {
-  color: var(--accent-secondary);
+  color: var(--accent-green);
   font-size: 15px;
   display: flex;
 }
@@ -118,7 +138,6 @@
   font-weight: 700;
   color: white;
   margin-left: -8px;
-  font-family: var(--font-body);
 }
 
 .hero__proof-avatar:first-child {
@@ -148,29 +167,28 @@
   border: 1px solid var(--border-bright);
   border-radius: 36px;
   overflow: hidden;
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 0 0 1px var(--border), 0 30px 80px rgba(0,0,0,0.8), var(--shadow-green);
   position: relative;
   z-index: 2;
 }
 
 .hero__phone-header {
-  background: var(--bg-card);
+  background: #0f0f0f;
   padding: 14px;
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid var(--border);
 }
 
 .hero__phone-notch {
-  width: 80px;
+  width: 100px;
   height: 6px;
   background: var(--border-bright);
   border-radius: 3px;
 }
 
 .hero__phone-screen {
-  padding: 24px 20px;
-  background: var(--bg-primary);
+  padding: 20px;
+  background: #0d0d0d;
 }
 
 .mockup-top {
@@ -184,40 +202,34 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  font-family: var(--font-heading);
+  font-family: 'Space Grotesk', sans-serif;
   font-weight: 700;
   font-size: 14px;
-  color: var(--text-primary);
-}
-
-.mockup-logo span {
-  color: var(--accent-primary);
+  color: var(--accent-green);
 }
 
 .mockup-title {
-  font-family: var(--font-heading);
-  font-size: 20px;
-  font-weight: 400;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 4px;
 }
 
 .mockup-sub {
   font-size: 11px;
-  color: var(--text-secondary);
-  margin-bottom: 20px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
   line-height: 1.5;
-  font-family: var(--font-body);
 }
 
 .mockup-section-label {
   font-size: 10px;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--text-secondary);
-  margin-bottom: 10px;
-  font-family: var(--font-accent);
+  color: var(--text-muted);
+  margin-bottom: 8px;
 }
 
 .mockup-fields {
@@ -228,14 +240,13 @@
 }
 
 .mockup-field {
-  background: var(--bg-card);
+  background: var(--bg-secondary);
   border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 10px;
+  border-radius: 8px;
+  padding: 8px 10px;
   display: flex;
   flex-direction: column;
   gap: 2px;
-  box-shadow: var(--shadow-sm);
 }
 
 .mockup-field-label {
@@ -243,11 +254,10 @@
   color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  font-family: var(--font-accent);
 }
 
 .mockup-field-val {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   color: var(--text-primary);
 }
@@ -255,52 +265,52 @@
 .mockup-goals {
   display: flex;
   gap: 6px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   flex-wrap: wrap;
 }
 
 .mockup-goal {
-  padding: 6px 12px;
-  border-radius: 100px;
-  font-size: 11px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 10px;
   font-weight: 600;
-  background: var(--bg-card);
+  background: var(--bg-secondary);
   border: 1px solid var(--border);
-  color: var(--text-secondary);
+  color: var(--text-muted);
   cursor: pointer;
   transition: var(--transition);
 }
 
 .mockup-goal--active {
-  background: var(--accent-bg);
-  border-color: var(--accent-secondary);
-  color: var(--accent-secondary);
+  background: var(--accent-green-dark);
+  border-color: var(--accent-green-border);
+  color: var(--accent-green);
 }
 
 .mockup-progress {
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .mockup-progress-bar {
-  height: 4px;
+  height: 3px;
   background: var(--border);
-  border-radius: 4px;
+  border-radius: 3px;
   overflow: hidden;
 }
 
 .mockup-progress-fill {
   height: 100%;
-  background: var(--accent-primary);
-  border-radius: 4px;
+  background: var(--accent-green);
+  border-radius: 3px;
 }
 
 .mockup-btn {
-  background: var(--text-primary);
-  color: #fff;
-  font-size: 12px;
-  font-weight: 500;
-  padding: 12px;
-  border-radius: 12px;
+  background: var(--accent-green);
+  color: #000;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 10px;
   text-align: center;
   cursor: pointer;
 }
@@ -309,31 +319,32 @@
 .hero__float-card {
   position: absolute;
   background: var(--bg-card);
-  border: 1px solid var(--border);
+  border: 1px solid var(--accent-green-border);
   border-radius: var(--radius-md);
   padding: 12px 16px;
   display: flex;
   align-items: center;
   gap: 12px;
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-green);
+  backdrop-filter: blur(10px);
   z-index: 3;
 }
 
 .hero__float-card--1 {
-  top: 15%;
-  right: -30px;
-  animation: float 4s ease-in-out infinite;
+  top: 10%;
+  right: -20px;
+  animation: float 3.5s ease-in-out infinite;
 }
 
 .hero__float-card--2 {
-  bottom: 20%;
-  left: -40px;
-  animation: float 5s ease-in-out infinite 1s;
+  bottom: 15%;
+  left: -30px;
+  animation: float 4.5s ease-in-out infinite 1s;
 }
 
 .float-card-icon {
   font-size: 22px;
-  color: var(--accent-primary);
+  color: var(--accent-green);
   flex-shrink: 0;
 }
 
@@ -342,7 +353,6 @@
   color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  font-family: var(--font-accent);
 }
 
 .float-card-val {

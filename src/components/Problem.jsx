@@ -43,7 +43,7 @@ export default function Problem() {
       <div className="container">
         <div className="problem__header">
           <div className="section-tag">
-            <MdOutlineWarning />
+
             Masalah yang Kami Pecahkan
           </div>
           <h2 className="section-title">
