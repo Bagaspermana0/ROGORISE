@@ -7,7 +7,6 @@ const navLinks = [
   { label: 'Fitur', href: '#features' },
   { label: 'Cara Kerja', href: '#how-it-works' },
   { label: 'Harga', href: '#pricing' },
-  { label: 'Tim', href: '#team' },
 ]
 
 export default function Navbar() {

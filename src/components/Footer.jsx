@@ -4,8 +4,8 @@ import logoImg from '../assets/rogoriselogo.png'
 import './Footer.css'
 
 const footerLinks = {
-  Produk: ['Fitur', 'Cara Kerja', 'Harga', 'Roadmap', 'Updates'],
-  Perusahaan: ['Tentang Kami', 'Tim', 'Karir', 'Press Kit', 'Blog'],
+  Produk: ['Fitur', 'Cara Kerja', 'Harga', 'Updates'],
+  Perusahaan: ['Tentang Kami', 'Karir', 'Press Kit', 'Blog'],
   Bantuan: ['FAQ', 'Customer Support', 'Privacy Policy', 'Terms of Service', 'Keamanan Data'],
 }
 

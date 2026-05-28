@@ -30,13 +30,9 @@ export default function AboutScreen({ goBack }) {
 
         <div style={{ background: '#161616', border: '1px solid #222', borderRadius: 16, padding: 20, width: '100%' }}>
           <h3 style={{ fontSize: 14, fontWeight: 700, marginBottom: 8 }}>Didukung Oleh</h3>
-          <p style={{ fontSize: 13, color: '#ccc', lineHeight: 1.6, marginBottom: 12 }}>
+          <p style={{ fontSize: 13, color: '#ccc', lineHeight: 1.6, margin: 0 }}>
             Program inkubasi startup Wadhwani Foundation.
           </p>
-          <div style={{ fontSize: 12, color: '#666' }}>
-            Tim Pengembang:<br/>
-            - Bagas Permana (Universitas Negeri Semarang)
-          </div>
         </div>
 
         <div style={{ marginTop: 'auto', paddingTop: 40, fontSize: 11, color: '#555', textAlign: 'center' }}>

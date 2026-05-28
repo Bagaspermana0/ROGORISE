@@ -7,9 +7,6 @@ import Features from './components/Features'
 import HowItWorks from './components/HowItWorks'
 import Competitors from './components/Competitors'
 import Pricing from './components/Pricing'
-import MarketSize from './components/MarketSize'
-import Roadmap from './components/Roadmap'
-import Team from './components/Team'
 import Footer from './components/Footer'
 import MobileApp from './app/MobileApp'
 
@@ -26,9 +23,6 @@ function LandingPage() {
         <HowItWorks />
         <Competitors />
         <Pricing />
-        <MarketSize />
-        <Roadmap />
-        <Team />
       </main>
       <Footer />
     </>
