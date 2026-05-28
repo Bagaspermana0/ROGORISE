@@ -1,5 +1,6 @@
 import { RiFlashlightFill, RiArrowRightLine, RiInstagramLine, RiTiktokFill, RiYoutubeLine, RiWhatsappLine, RiMailLine, RiMapPinLine, RiAppleFill, RiAndroidFill, RiHeartFill } from 'react-icons/ri'
 import { Link } from 'react-router-dom'
+import logoImg from '../assets/rogoriselogo.png'
 import './Footer.css'
 
 const footerLinks = {
@@ -43,9 +44,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="footer__brand">
             <div className="footer__logo">
-              <div className="footer__logo-icon">
-                <RiFlashlightFill />
-              </div>
+              <img 
+                src={logoImg} 
+                alt="RogoRise Logo" 
+                style={{ width: '32px', height: '32px', borderRadius: '8px', objectFit: 'contain' }} 
+              />
               <span>Rogo<span className="green-text">Rise</span></span>
             </div>
             <p className="footer__brand-desc">

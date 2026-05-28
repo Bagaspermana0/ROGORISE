@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { RiFlashlightFill, RiArrowLeftLine, RiCheckLine } from 'react-icons/ri'
 import { TbRocket } from 'react-icons/tb'
+import logoImg from '../../assets/rogoriselogo.png'
 
 export default function RegisterScreen({ navigate, setUser }) {
   const [form, setForm] = useState({ name: '', email: '', password: '' })
@@ -22,7 +23,11 @@ export default function RegisterScreen({ navigate, setUser }) {
           <RiArrowLeftLine />
         </button>
         <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-          <RiFlashlightFill style={{ color: 'var(--accent-green)', fontSize: 20 }} />
+          <img 
+            src={logoImg} 
+            alt="RogoRise Logo" 
+            style={{ width: '20px', height: '20px', borderRadius: '5px', objectFit: 'contain' }} 
+          />
           <span style={{ fontFamily: 'Space Grotesk, sans-serif', fontWeight: 800, fontSize: 18 }}>RogoRise</span>
         </div>
       </div>

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { RiFlashlightFill, RiEyeLine, RiEyeOffLine, RiGoogleFill } from 'react-icons/ri'
 import { BsApple } from 'react-icons/bs'
 import { TbRocket, TbMoodSmile } from 'react-icons/tb'
+import logoImg from '../../assets/rogoriselogo.png'
 
 export default function LoginScreen({ navigate, setUser }) {
   const [email, setEmail] = useState('')
@@ -24,8 +25,12 @@ export default function LoginScreen({ navigate, setUser }) {
     <div className="screen" style={{ padding: '0 0 20px' }}>
       {/* Hero Top */}
       <div className="login-hero">
-        <div className="login-logo">
-          <RiFlashlightFill />
+        <div className="login-logo" style={{ background: 'none', border: 'none', width: 'auto', height: 'auto' }}>
+          <img 
+            src={logoImg} 
+            alt="RogoRise Logo" 
+            style={{ width: '48px', height: '48px', borderRadius: '12px', objectFit: 'contain' }} 
+          />
         </div>
         <h1 className="login-title">RogoRise</h1>
         <p className="login-sub">AI Coach Fitness & Nutrisi Personalmu</p>

@@ -28,6 +28,7 @@ import { RiHome5Fill, RiHome5Line, RiRunLine, RiRunFill, RiRestaurant2Line, RiRe
 import { RiArrowLeftLine } from 'react-icons/ri'
 import { Link } from 'react-router-dom'
 import { RiFlashlightFill } from 'react-icons/ri'
+import logoImg from '../assets/rogoriselogo.png'
 
 const SCREENS_WITH_BOTTOM_NAV = ['home', 'workout', 'nutrition', 'progress', 'profile']
 const SCREENS_AUTH = ['login', 'register', 'onboarding']
@@ -96,8 +97,12 @@ export default function MobileApp() {
 
       {/* Branding */}
       <div className="app-page-brand">
-        <div className="app-page-brand-main">
-          <RiFlashlightFill />
+        <div className="app-page-brand-main" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <img 
+            src={logoImg} 
+            alt="RogoRise Logo" 
+            style={{ width: '24px', height: '24px', borderRadius: '6px', objectFit: 'contain' }} 
+          />
           <span>RogoRise</span>
           <span className="app-page-beta">App Prototype</span>
         </div>

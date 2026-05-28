@@ -1,4 +1,5 @@
 import { RiArrowLeftLine, RiFlashlightFill } from 'react-icons/ri'
+import logoImg from '../../assets/rogoriselogo.png'
 
 export default function AboutScreen({ goBack }) {
   return (
@@ -9,8 +10,12 @@ export default function AboutScreen({ goBack }) {
       </div>
 
       <div className="screen-body" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-        <div style={{ width: 80, height: 80, borderRadius: 24, background: 'rgba(0,255,135,0.1)', border: '1px solid rgba(0,255,135,0.3)', color: 'var(--accent-green)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 40, marginBottom: 20 }}>
-          <RiFlashlightFill />
+        <div style={{ width: 80, height: 80, borderRadius: 24, background: 'none', border: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 20 }}>
+          <img 
+            src={logoImg} 
+            alt="RogoRise Logo" 
+            style={{ width: '80px', height: '80px', borderRadius: '24px', objectFit: 'contain' }} 
+          />
         </div>
         
         <h1 style={{ fontSize: 24, fontWeight: 900, fontFamily: 'Space Grotesk, sans-serif', marginBottom: 4 }}>RogoRise</h1>

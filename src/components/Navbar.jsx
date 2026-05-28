@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
-import { RiFlashlightFill } from 'react-icons/ri'
 import { HiMenuAlt3, HiX } from 'react-icons/hi'
+import logoImg from '../assets/rogoriselogo.png'
 import './Navbar.css'
 
 const navLinks = [
@@ -25,9 +25,11 @@ export default function Navbar() {
       <div className="container navbar__inner">
         {/* Logo */}
         <a href="#" className="navbar__logo">
-          <div className="navbar__logo-icon">
-            <RiFlashlightFill />
-          </div>
+          <img 
+            src={logoImg} 
+            alt="RogoRise Logo" 
+            style={{ width: '32px', height: '32px', borderRadius: '8px', objectFit: 'contain' }} 
+          />
           <span className="navbar__logo-text">Rogo<span>Rise</span></span>
         </a>
 

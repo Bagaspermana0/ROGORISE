@@ -2,6 +2,7 @@ import { RiArrowRightLine, RiPlayCircleFill, RiFlashlightFill, RiLeafLine, RiHea
 import { BsStars } from 'react-icons/bs'
 import { TbFlame } from 'react-icons/tb'
 import { Link } from 'react-router-dom'
+import logoImg from '../assets/rogoriselogo.png'
 import './Hero.css'
 
 const badges = [
@@ -83,8 +84,12 @@ export default function Hero() {
             <div className="hero__phone-screen">
               {/* App mockup content */}
               <div className="mockup-top">
-                <div className="mockup-logo">
-                  <RiFlashlightFill />
+                <div className="mockup-logo" style={{ gap: '6px' }}>
+                  <img 
+                    src={logoImg} 
+                    alt="RogoRise Logo" 
+                    style={{ width: '18px', height: '18px', borderRadius: '4px', objectFit: 'contain' }} 
+                  />
                   <span>RogoRise</span>
                 </div>
                 <span className="badge">STEP 1 OF 3</span>
