@@ -15,6 +15,19 @@ ROGORISE dirancang untuk memberikan pengalaman antarmuka web masa kini dengan op
 
 ---
 
+## 📐 Arsitektur Komponen UI
+
+```mermaid
+graph TD
+    A["Main Application (App.jsx)"] --> B["React Router v7 Provider"]
+    B --> C["Layout Container"]
+    C --> D["Header & Navigation"]
+    C --> E["Dynamic Views / Page Routes"]
+    C --> F["Footer & Contact Info"]
+```
+
+---
+
 ## ✨ Highlights & Fitur
 
 - ⚡ **High Performance Frontend**: Komponen React 19 dengan performa rendering optimal.
