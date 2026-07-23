@@ -1,16 +1,58 @@
-# React + Vite
+# 🚀 ROGORISE — Modern Interactive Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![React](https://img.shields.io/badge/React-19.0-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-8.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![React Router](https://img.shields.io/badge/React_Router-7.0-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white)](https://reactrouter.com/)
 
-Currently, two official plugins are available:
+Aplikasi web modern berbasis **React 19** dan **Vite** dengan antarmuka yang dinamis, cepat, dan responsif.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Fitur Utama
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ⚡ **Super Fast HMR**: Pengembangan cepat didukung oleh Vite build engine.
+- 🎨 **Modern Frontend UI**: Komponen React 19 dengan styling responsif dan animasi yang mulus.
+- 🔀 **Multi-page Navigation**: Routing navigasi instan menggunakan React Router v7.
+- 📱 **Fully Responsive**: Tampilan optimal di perangkat mobile, tablet, maupun desktop.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- **Frontend**: React 19, React DOM 19
+- **Routing**: React Router v7
+- **Icons**: React Icons
+- **Bundler & Dev Server**: Vite 8
+
+---
+
+## 🚀 Cara Menjalankan secara Lokal
+
+1. **Clone repository ini:**
+   ```bash
+   git clone https://github.com/Bagaspermana0/ROGORISE.git
+   cd ROGORISE
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Jalankan Development Server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Akses aplikasi di browser:**
+   Buka URL lokal yang muncul di terminal (biasanya `http://localhost:5173`).
+
+---
+
+## 👨‍💻 Author
+
+**Bagas Permana Putra**  
+Sistem Informasi — Universitas Negeri Semarang (UNNES)  
+- Website: [bagaspermanaa.web.id](https://bagaspermanaa.web.id)  
+- GitHub: [@Bagaspermana0](https://github.com/Bagaspermana0)  
+- LinkedIn: [Bagas Permana Putra](https://www.linkedin.com/in/bagas-permana-putra-881926321)
